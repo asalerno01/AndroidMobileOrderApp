@@ -8,7 +8,7 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
-import com.example.mobileordering.databinding.FragmentSecondBinding;
+import com.example.androidmobileorderapp.databinding.FragmentSecondBinding;
 
 public class SecondFragment extends Fragment {
 

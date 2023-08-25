@@ -68,7 +68,7 @@
 
             <androidx.fragment.app.FragmentContainerView
                 android:id="@+id/fragment_container_view"
-                android:name="com.example.mobileordering.fragments.AddonsFragment"
+                android:name="com.example.androidmobileorderapp.fragments.AddonsFragment"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="15dp"

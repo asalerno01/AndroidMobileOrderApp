@@ -3,7 +3,7 @@ package com.example.androidmobileorderapp;
 import android.content.Intent;
 import android.os.Bundle;
 
-import com.example.mobileordering.activities.MenuActivity;
+import com.example.androidmobileorderapp.activities.MenuActivity;
 import com.google.android.material.snackbar.Snackbar;
 import androidx.appcompat.app.AppCompatActivity;
 import android.view.View;
@@ -12,7 +12,7 @@ import androidx.navigation.NavController;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
-import com.example.mobileordering.databinding.ActivityMainBinding;
+import com.example.androidmobileorderapp.databinding.ActivityMainBinding;
 
 import android.view.Menu;
 import android.view.MenuItem;
