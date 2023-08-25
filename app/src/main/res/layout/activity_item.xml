@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/itemView"
+    tools:context=".activities.ItemActivity"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/white"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toTopOf="@+id/btn_addToCart"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/iv_itemImage"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:src="@drawable/placeholder"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/tv_itemName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/lato_black"
+                android:text="@string/item_name"
+                android:textColor="@color/black"
+                android:textSize="32sp"
+                app:layout_constraintTop_toBottomOf="@+id/iv_itemImage" />
+
+            <TextView
+                android:id="@+id/tv_itemDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginEnd="15dp"
+                android:fontFamily="@font/lato_regular"
+                android:text="@string/item_description"
+                android:textColor="@color/text_gray"
+                android:textSize="20sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/tv_itemName" />
+
+            <TextView
+                android:id="@+id/spacer"
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:layout_marginTop="15dp"
+                android:background="@drawable/spacer"
+                app:layout_constraintTop_toBottomOf="@+id/tv_itemDescription" />
+
+            <androidx.fragment.app.FragmentContainerView
+                android:id="@+id/fragment_container_view"
+                android:name="com.example.mobileordering.fragments.AddonsFragment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/spacer" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+    <TextView
+        android:id="@+id/tv_price"
+        android:layout_width="match_parent"
+        android:layout_height="8dp"
+        app:layout_constraintBottom_toTopOf="@id/btn_addToCart"/>
+    <Button
+        android:id="@+id/btn_addToCart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="25dp"
+        android:backgroundTint="@color/blue"
+        android:fontFamily="@font/lato_bold"
+        android:text="@string/add_to_cart"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
+<!--</androidx.coordinatorlayout.widget.CoordinatorLayout>-->

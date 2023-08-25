@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="border">#D5D7DB</color>
+    <color name="background">#E9EAEC</color>
+    <color name="salerno_yellow">#FEF901</color>
+    <color name="salerno_red">#FF002A</color>
+    <color name="blue">#00BBE1</color>
+    <color name="text_gray">#333333</color>
+    <color name="upcharge_label_gray">#767676</color>
+</resources>
